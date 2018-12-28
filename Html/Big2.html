@@ -381,9 +381,9 @@
 		}
 		body2211.onmousemove=function(ev){
 			var ev = ev || window.event;
-
+			var offset = document.documentElement.scrollTop;
 		 	var left = ev.clientX - body221.offsetLeft - (slider.offsetWidth/2);
-		 	var top = ev.clientY - body221.offsetTop - (slider.offsetHeight/2);
+		 	var top = ev.clientY - body221.offsetTop - (slider.offsetHeight/2) + offset;
 		 	var maxLeft = body2211.offsetWidth - slider.offsetWidth;
 		 	var maxTop = body2211.offsetHeight - slider.offsetHeight;
 
